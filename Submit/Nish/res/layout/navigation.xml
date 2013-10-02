@@ -1,0 +1,33 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <TextView
+        android:id="@+id/toolbar_tab_follow"
+        android:layout_width="80dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/backgound_states"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="2dp"
+        android:gravity="center"
+        android:text="@string/title_friend_list"
+        android:textColor="@drawable/text_states"
+        android:textSize="20dip" />
+
+    <TextView
+        android:id="@+id/toolbar_tab_you"
+        android:layout_width="80dip"
+        android:layout_height="wrap_content"        
+        android:layout_weight="1"
+        android:background="@drawable/backgound_states"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="4dp"
+        android:gravity="center"        
+        android:text="@string/title_pending_list"
+        android:textColor="@drawable/text_states"
+        android:textSize="20dip" />
+
+</merge>

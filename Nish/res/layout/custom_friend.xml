@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutFriend1"
+    android:layout_width="fill_parent"
+    android:layout_height="60dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp" 
+    android:background="#ffff" 
+    >
+
+    <ImageView
+        android:id="@+id/avatarFriend1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/usernameFriend1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="80"
+        android:paddingLeft="10dp"
+        android:text="abcdef"
+        android:textStyle="bold" />
+
+	<ImageView
+        android:id="@+id/buttonFriend1"
+        android:layout_width="40dp"
+        android:layout_height="40dp" 
+        android:layout_weight="1"
+        android:layout_gravity="center">
+    </ImageView>
+    <ImageView
+        android:id="@+id/buttonFriend2"
+        android:layout_width="40dp"
+        android:layout_height="40dp" 
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:paddingLeft="10dp">
+    </ImageView>
+</LinearLayout>

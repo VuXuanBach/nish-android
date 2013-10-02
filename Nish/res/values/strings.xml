@@ -1,0 +1,74 @@
+<resources>
+
+    <string name="app_name">nish</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Nish</string>
+    <string name="title_login">Login</string>
+    <string name="title_register">Register</string>	
+	<string name="title_home">Home</string>
+	<string name="title_explore">Explore</string>
+	<string name="title_news">News</string>
+	<string name="title_info">Info</string>
+	<string name="title_preference">Preferences</string>
+	<string name="title_camrea_preview">Review</string>
+	<string name="title_friend_list">Friends</string>
+	<string name="title_about">About</string>
+	<string name="title_edit_profile">Edit profile</string>
+	<string name="title_liked_photo">Photos you liked</string>
+	<string name="title_logout">Logout</string>
+	<string name="title_photo_privacy">Photo privacy</string>
+	<string name="title_pending_list">Pendings</string>
+	<string name="title_reset_password">Get your password</string>
+	<string name="title_comment">Comment photo</string>
+	<string name="txt_login">Login</string>
+	<string name="txt_signup">Sign up</string>
+	<string name="txt_username">Username</string>
+	<string name="txt_password">Password</string>
+	<string name="txt_email">Email</string>
+	<string name="txt_phone">Phone</string>
+	<string name="txt_forget_password">Forgot your password?</string>
+	<string name="txt_send">Send</string>
+	<string name="txt_about">NISH (Network Image SHaring)</string>
+	<string name="txt_public_profile">Public Profile</string>
+	<string name="txt_private_profile">Private Profile</string>	
+	<string name="title_find_friend">Find friend</string>
+	<string name="title_profile_picture">Get a pic</string>
+	<string name="txt_search">Search</string>
+	<string name="txt_photo">Photo</string>
+	
+	<string name="hint_email">example@example.com</string>	
+	<string name="hint_phone">(Optional)</string>
+	<string name="hint_profile_firstname">First name</string>
+	<string name="hint_profile_lastname">Last name</string>
+	<string name="hint_profile_email">Email</string>
+	<string name="hint_profile_phone">Phone</string>
+	<string name="hint_search">Username</string>	
+	
+	<string name="title_btn_original">Original</string>
+	<string name="title_btn_lomo">Lomo</string>
+	<string name="title_btn_block">Block</string>
+	<string name="title_btn_old">Old</string>
+	<string name="title_btn_sharpen">Sharpen</string>
+	<string name="title_btn_light">Light</string>
+	<string name="title_btn_neon">Neon</string>
+	<string name="title_btn_pixelate">Pixel Late</string>
+	<string name="title_btn_invert">Invert</string>
+	<string name="title_btn_gray">Gray</string>
+	<string name="title_btn_tv">TV</string>
+	<string name="title_btn_relief">Relief</string>
+	<string name="title_btn_vague">Vague</string>
+	<string name="title_btn_oil">Oil</string>
+	<string name="title_btn_submit">Submit</string>		
+	
+	<string name="remmeber_username_password">Remember account</string>	
+	<string name="pref_key_flag_background_update">background_update_flag</string>
+	
+	
+	 <string name="buttontxt">Open Nish!</string>
+    <string name="widget1name">Nish widget</string>
+    <string name="widgetPending">Loading ...</string>
+    <string name="widgetPost">Loading ...</string>
+    <string name="openApp">Open App</string>
+    
+</resources>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollComment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/layoutOverallComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" >
+
+            <ImageView
+                android:id="@+id/avatarPostComment"
+                android:layout_width="25dp"
+                android:layout_height="25dp" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/usernamePostComment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp" 
+                android:layout_toRightOf="@id/avatarPostComment"
+                />
+
+            <ImageView
+                android:id="@+id/imageComment"
+                android:layout_width="300dp"
+                android:layout_height="280dp"
+                android:gravity="center_horizontal" 
+                android:layout_below="@id/avatarPostComment"
+                >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/commentTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comment:"
+                android:layout_below="@id/imageComment"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+            <LinearLayout
+                android:id="@+id/layoutOldComment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" 
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_below="@id/commentTitle"
+                >
+            </LinearLayout>
+
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/layoutTextComment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" 
+                android:layout_below="@id/layoutOldComment"
+                >
+
+                <EditText
+                    android:id="@+id/commentText"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10" 
+                    android:imeOptions="actionSend" 
+                    android:inputType="text"
+                    >
+                </EditText>
+
+                <Button
+                    android:id="@+id/submitComment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/commentText"
+                    android:text="Send" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

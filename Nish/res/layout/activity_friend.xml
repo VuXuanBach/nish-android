@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pax="http://schemas.android.com/apk/res/com.nish"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#bebebe"
+    android:orientation="vertical"
+    android:paddingTop="2pt" >
+
+    <com.nish.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        pax:tab_id="toolbar_tab_follow" />
+
+    <ViewFlipper
+        android:id="@+id/flipper_news"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top" >
+    </ViewFlipper>
+
+</LinearLayout>

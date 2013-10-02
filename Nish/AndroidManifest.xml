@@ -1,0 +1,151 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nish"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <permission
+        android:name="com.example.myapp.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.nish.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:background="@color/white"
+        android:icon="@drawable/ic_launcher_camera"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/Theme.Sherlock" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_login"
+            android:theme="@style/Theme.Sherlock" />
+        <activity
+            android:name=".RegisterActivity"
+            android:label="@string/title_register"
+            android:theme="@style/Theme.Sherlock" />
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_home"
+            android:theme="@style/Theme.Sherlock" />
+        <activity
+            android:name=".ExploreActivity"
+            android:label="@string/title_explore"
+            android:theme="@style/Theme.Sherlock" />
+        <activity
+            android:name=".InfoActivity"
+            android:label="@string/title_info"
+            android:theme="@style/Theme.Sherlock" />
+        <activity
+            android:name=".FriendActivity"
+            android:label="@string/title_news"
+            android:theme="@style/Theme.Sherlock" />
+        <activity
+            android:name=".ForgetPasswordActivity"
+            android:label="@string/title_reset_password"
+            android:theme="@style/Theme.Sherlock" />
+        <activity
+            android:name=".PreferencesActivity"
+            android:label="@string/title_preference"
+            android:theme="@style/Theme.Sherlock" />
+        <activity
+            android:name=".CommentActivity"
+            android:label="@string/title_comment"
+            android:theme="@style/Theme.Sherlock"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name=".TabMainActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".CameraActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".CameraPreviewActivity"
+            android:label="@string/title_camrea_preview"
+            android:theme="@style/Theme.Sherlock" />
+        <activity
+            android:name=".preference.AboutActivity"
+            android:label="@string/title_about"
+            android:theme="@style/Theme.Sherlock" />
+        <activity
+            android:name=".preference.EditProfileActivity"
+            android:label="@string/title_edit_profile"
+            android:theme="@style/Theme.Sherlock" />
+        <activity
+            android:name=".preference.LikedPhotoActivity"
+            android:label="@string/title_liked_photo"
+            android:theme="@style/Theme.Sherlock" />
+        <activity
+            android:name=".preference.LocationPrivacyActivity"
+            android:label="@string/title_photo_privacy"
+            android:theme="@style/Theme.Sherlock" />
+        <activity
+            android:name=".preference.LogoutActivity"
+            android:label="@string/title_logout"
+            android:theme="@style/Theme.Sherlock" />
+        <activity
+            android:name=".preference.FindFriendActivity"
+            android:label="@string/title_find_friend"
+            android:theme="@style/Theme.Sherlock" />
+        <activity
+            android:name=".preference.ProfilePictureActivity"
+            android:label="@string/title_profile_picture"
+            android:theme="@style/Theme.Sherlock" />
+        <activity
+            android:name=".preference.ProfilePicturePreviewActivity"
+            android:label="@string/title_camrea_preview"
+            android:theme="@style/Theme.Sherlock" />
+
+        <receiver
+            android:name=".WidgetActivity"
+            android:label="@string/widget1name" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.eightbitcloud.example.widget.8BITCLOCK_WIDGET_UPDATE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.paad.mywidget.FORCE_WIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget1_info" />
+        </receiver>
+
+        <service android:name="com.parse.PushService" />
+
+        <receiver android:name="com.parse.ParseBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

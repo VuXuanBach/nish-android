@@ -1,0 +1,72 @@
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f000" >
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="0dp"
+        android:layout_y="210dp"
+        android:text="@string/txt_login" />
+
+    <TextView
+        android:id="@+id/tv_forget_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="0dp"
+        android:layout_y="280dp"
+        android:text="@string/txt_forget_password"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/usernameTitle"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_x="0dp"
+        android:layout_y="20dp"
+        android:text="@string/txt_username"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/txt_username"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_x="80dp"
+        android:layout_y="10dp"
+        android:ems="10"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/passwordTitle"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_x="0dp"
+        android:layout_y="90dp"
+        android:text="@string/txt_password"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/txt_password"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_x="80dp"
+        android:layout_y="80dp"
+        android:ems="10"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:inputType="textPassword" />
+    
+    <CheckBox
+        android:id="@+id/cb_rememberUP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="54dp"
+        android:layout_y="141dp"
+        android:text="@string/remmeber_username_password" />
+
+</AbsoluteLayout>

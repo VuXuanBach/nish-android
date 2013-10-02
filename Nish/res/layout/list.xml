@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutListview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/layoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffff" >
+
+        <EditText
+            android:id="@+id/txt_search_friend"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:ems="12"
+            android:hint="@string/hint_search"
+            android:imeOptions="actionSend"
+            android:inputType="text"
+            android:textAppearance="?android:attr/textAppearanceSmall" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/btn_search_friend"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/txt_search_friend"
+            android:text="@string/txt_search" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="fill_vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:scrollbars="vertical" >
+    </ListView>
+
+</LinearLayout>

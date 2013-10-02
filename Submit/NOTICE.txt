@@ -1,0 +1,27 @@
+
+Full name: Vu Xuan Bach - s3298809
+	   Le Hoang Hai - s3298775
+
+
+
+1. Import two projects: 'Nish' and 'library'
+
+2. Create folder libs in 'Nish' project 
+
+3. Add android-support-v4.jar of 'library' project into folder libs
+
+4. Add Parse-1.0.27 into folder libs
+
+5. Right click on 'Nish' project -> Properties.
+
+6. Choose Android
+
+7. In Library, click Add
+
+8. Choose 'library' project
+
+9. Click 'ok'
+
+
+
+On emulator: run 2.3.3

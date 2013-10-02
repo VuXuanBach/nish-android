@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget32"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/layoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="22"
+        android:background="#f000" >
+
+        <EditText
+            android:id="@+id/txt_search"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="search"
+            android:inputType="text"
+            android:textAppearance="?android:attr/textAppearanceSmall" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/txt_search"
+            android:text="search" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="fill_vertical"
+        android:layout_weight="3"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:scrollbars="vertical" >
+    </ListView>
+
+</LinearLayout>

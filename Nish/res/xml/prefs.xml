@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory>
+        <PreferenceScreen
+            android:key="find_friend"
+            android:title="Find Friends"
+            android:widgetLayout="@layout/ic_custom" >
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:data="mydata"
+                android:targetClass="com.nish.preference.FindFriendActivity"
+                android:targetPackage="com.nish" />
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:key="likedphoto"
+            android:title="Photos you&apos;ve liked"
+            android:widgetLayout="@layout/ic_custom" >
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:data="mydata"
+                android:targetClass="com.nish.preference.LikedPhotoActivity"
+                android:targetPackage="com.nish" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+    <PreferenceCategory>
+        <PreferenceScreen
+            android:key="edit_profile"
+            android:title="Edit profile"
+            android:widgetLayout="@layout/ic_custom" >
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:data="mydata"
+                android:targetClass="com.nish.preference.EditProfileActivity"
+                android:targetPackage="com.nish" />
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:key="profile_photo"
+            android:title="Change Profile Picture"
+            android:widgetLayout="@layout/ic_custom" >           
+        </PreferenceScreen>
+        <CheckBoxPreference
+                android:key="location"
+                android:title="Location detection" />
+    </PreferenceCategory>
+    <PreferenceCategory>
+        <PreferenceScreen
+            android:key="back"
+            android:title="Back"
+            android:widgetLayout="@layout/ic_custom" >
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:key="about"
+            android:title="About"
+            android:widgetLayout="@layout/ic_custom" >
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:data="mydata"
+                android:targetClass="com.nish.preference.AboutActivity"
+                android:targetPackage="com.nish" />
+        </PreferenceScreen>        
+        <PreferenceScreen
+            android:key="logout"
+            android:title="Log out"
+            android:widgetLayout="@layout/ic_custom" >
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+</PreferenceScreen>

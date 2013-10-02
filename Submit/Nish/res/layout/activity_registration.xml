@@ -1,0 +1,116 @@
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f000"
+    android:orientation="vertical"
+    android:padding="20dip" >
+
+    <TextView
+        android:id="@+id/emailTitle"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_x="0dp"
+        android:layout_y="20dp"
+        android:text="@string/txt_email"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_x="80dp"
+        android:layout_y="10dp"
+        android:ems="10"
+        android:hint="@string/hint_email"
+        android:inputType="textEmailAddress"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/usernameTitle"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_x="0dp"
+        android:layout_y="80dp"
+        android:text="@string/txt_username"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_x="80dp"
+        android:layout_y="70dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/passwordTitle"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_x="0dp"
+        android:layout_y="140dp"
+        android:text="@string/txt_password"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_x="80dp"
+        android:layout_y="130dp"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/phoneTitle"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_x="0dp"
+        android:layout_y="200dp"
+        android:text="@string/txt_phone"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_x="80dp"
+        android:layout_y="190dp"
+        android:ems="10"
+        android:hint="@string/hint_phone"
+        android:inputType="phone"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/photoTitle"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_x="0dp"
+        android:layout_y="260dp"
+        android:text="@string/txt_photo"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/photoRegister"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_x="80dp"
+        android:layout_y="260dp"
+        android:background="@drawable/default_avatar" />
+    
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="0dp"
+        android:layout_y="380dp"
+        android:text="@string/txt_signup" />
+
+</AbsoluteLayout>
